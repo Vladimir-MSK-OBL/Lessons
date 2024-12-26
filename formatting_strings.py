@@ -34,7 +34,8 @@ else:
     challenge_result = 'Ничья'
 print(f'Результат битвы: {challenge_result}!')
 
-tasks_total = round((team1_time + team2_time) / (score_1 + score_2), 1)
+time_avg = round((team1_time + team2_time), 1)
+tasks_total = (score_1 + score_2)
 
-print(f'Сегодня было решено {score_1 + score_2} задачи, в среднем по {tasks_total} секунды на задачу!')
+print(f'Сегодня было решено {tasks_total} задачи, в среднем по {time_avg} секунды на задачу!')
 
