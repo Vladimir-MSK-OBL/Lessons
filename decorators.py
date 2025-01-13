@@ -1,8 +1,7 @@
 def is_prime(func):
     def simp_or_comp(*number):
 
-        original_result = func(*number)
-        number = original_result
+        number = func(*number)
 
         result_dec = ''
         for divider in range(2, number):
